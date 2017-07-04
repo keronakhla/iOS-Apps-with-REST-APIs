@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Github Gists
+//  GitHub Gists
 //
 //  Created by Kerolos Nakhla on 7/4/17.
 //  Copyright © 2017 Kerolos Nakhla. All rights reserved.

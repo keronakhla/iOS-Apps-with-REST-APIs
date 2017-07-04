@@ -1,0 +1,6 @@
+framework module Pods_GitHub_Gists {
+  umbrella header "Pods-GitHub Gists-umbrella.h"
+
+  export *
+  module * { export * }
+}
