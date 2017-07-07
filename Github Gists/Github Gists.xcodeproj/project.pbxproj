@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10BA704F5A2DD938580C6D1B /* Pods_GitHub_Gists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DE0FAE2051FF554859C801 /* Pods_GitHub_Gists.framework */; };
+		E179C0451F1864A70098FA4B /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179C0441F1864A70098FA4B /* Gist.swift */; };
 		E1CC78201F0C26B60027B0AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC781F1F0C26B60027B0AF /* AppDelegate.swift */; };
 		E1CC78221F0C26B60027B0AF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC78211F0C26B60027B0AF /* MasterViewController.swift */; };
 		E1CC78241F0C26B60027B0AF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CC78231F0C26B60027B0AF /* DetailViewController.swift */; };
@@ -22,6 +23,7 @@
 		32D29149CF49039742F37F50 /* Pods-GitHub Gists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHub Gists.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHub Gists/Pods-GitHub Gists.release.xcconfig"; sourceTree = "<group>"; };
 		3660EF193A97B84217F87BFA /* Pods-GitHub Gists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHub Gists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHub Gists/Pods-GitHub Gists.debug.xcconfig"; sourceTree = "<group>"; };
 		D1DE0FAE2051FF554859C801 /* Pods_GitHub_Gists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHub_Gists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E179C0441F1864A70098FA4B /* Gist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		E1CC781C1F0C26B60027B0AF /* GitHub Gists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Gists.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CC781F1F0C26B60027B0AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1CC78211F0C26B60027B0AF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E179C0401F1862F90098FA4B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC781F1F0C26B60027B0AF /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E179C0411F18630E0098FA4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC78211F0C26B60027B0AF /* MasterViewController.swift */,
+				E1CC78231F0C26B60027B0AF /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E179C0421F1863220098FA4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC78251F0C26B60027B0AF /* Main.storyboard */,
+				E1CC782A1F0C26B60027B0AF /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E179C0431F1863440098FA4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC78281F0C26B60027B0AF /* Assets.xcassets */,
+				E1CC782D1F0C26B60027B0AF /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E179C0461F1864AB0098FA4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E179C0441F1864A70098FA4B /* Gist.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E1CC78131F0C26B60027B0AF = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +129,12 @@
 		E1CC781E1F0C26B60027B0AF /* GitHub Gists */ = {
 			isa = PBXGroup;
 			children = (
-				E1CC781F1F0C26B60027B0AF /* AppDelegate.swift */,
-				E1CC78211F0C26B60027B0AF /* MasterViewController.swift */,
-				E1CC78231F0C26B60027B0AF /* DetailViewController.swift */,
+				E179C0401F1862F90098FA4B /* AppDelegate */,
+				E179C0461F1864AB0098FA4B /* Model */,
 				E1CC78371F0C28700027B0AF /* Networking */,
-				E1CC78251F0C26B60027B0AF /* Main.storyboard */,
-				E1CC78281F0C26B60027B0AF /* Assets.xcassets */,
-				E1CC782A1F0C26B60027B0AF /* LaunchScreen.storyboard */,
-				E1CC782D1F0C26B60027B0AF /* Info.plist */,
+				E179C0431F1863440098FA4B /* Resources */,
+				E179C0411F18630E0098FA4B /* ViewControllers */,
+				E179C0421F1863220098FA4B /* Views */,
 			);
 			path = "GitHub Gists";
 			sourceTree = "<group>";
@@ -231,6 +274,7 @@
 			files = (
 				E1CC78241F0C26B60027B0AF /* DetailViewController.swift in Sources */,
 				E1CC78341F0C27470027B0AF /* GitHubAPIManager.swift in Sources */,
+				E179C0451F1864A70098FA4B /* Gist.swift in Sources */,
 				E1CC78221F0C26B60027B0AF /* MasterViewController.swift in Sources */,
 				E1CC78361F0C286C0027B0AF /* GistRouter.swift in Sources */,
 				E1CC78201F0C26B60027B0AF /* AppDelegate.swift in Sources */,
