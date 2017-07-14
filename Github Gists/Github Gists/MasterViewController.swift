@@ -37,6 +37,7 @@ class MasterViewController: UITableViewController {
         // Test
         GitHubAPIManager.sharedInstance.printPublicGists()
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

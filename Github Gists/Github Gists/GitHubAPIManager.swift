@@ -13,7 +13,6 @@ class GitHubAPIManager { // class is responsible for our API interactions
     static let sharedInstance = GitHubAPIManager()
     
     func printPublicGists() -> Void {
-        // TODO: implement
         Alamofire.request(GistRouter.getPublic())
             .responseString { response in
                 if let recievedString = response.result.value {
